@@ -1,0 +1,12 @@
+<form action="/admin" method="POST">
+    <textarea name="content" id="editor"></textarea>
+    <button>submit</button>
+</form>
+<script src="https://cdn.ckeditor.com/ckeditor5/10.0.0/classic/ckeditor.js"></script>
+<script>
+        ClassicEditor
+        .create( document.querySelector( '#editor' ) )
+        .catch( error => {
+            console.error( error );
+        } );
+</script>
